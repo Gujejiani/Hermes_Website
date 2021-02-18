@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Brygada 1918';
+    src: url('Brygada1918-Regular.eot');
+    src: url('Brygada1918-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Brygada1918-Regular.woff2') format('woff2'),
+        url('Brygada1918-Regular.woff') format('woff'),
+        url('Brygada1918-Regular.ttf') format('truetype'),
+        url('Brygada1918-Regular.svg#Brygada1918-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
