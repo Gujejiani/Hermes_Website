@@ -1,0 +1,43 @@
+@media only screen and (max-width: 920px) {
+  .nav {
+    display: none;
+  }
+  .header__hamburger--show {
+    display: inline-block;
+  }
+  .mobile__menu--show {
+    display: inline-block;
+  }
+  .opener__title {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .mobile__menu {
+    font-size: 13px;
+  }
+  .mobile__menu__logo {
+    width: 60px;
+  }
+  .mobile__nav__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mobile__nav__search img {
+    position: absolute;
+    width: 15px;
+    right: 10px;
+    top: 13px;
+  }
+  .opener__title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .opener__title {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+}
