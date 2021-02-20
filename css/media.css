@@ -11,6 +11,9 @@
   .opener__title {
     font-size: 35px;
   }
+  .product {
+    flex-basis: 45%;
+  }
 }
 
 @media only screen and (max-width: 769px) {
@@ -19,6 +22,7 @@
   }
   .mobile__menu__logo {
     width: 60px;
+    position: absolute;
   }
   .mobile__nav__icon {
     width: 20px;
@@ -34,10 +38,22 @@
   .opener__title {
     font-size: 25px;
   }
+  .product {
+    flex-basis: 80%;
+  }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 565px) {
   .opener__title {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 3px;
+  }
+  .header__container {
+    padding: 10px 50px;
+  }
+  .product__section {
+    padding: 100px 50px;
+  }
+  .product {
+    flex-basis: 100%;
   }
 }
