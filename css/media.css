@@ -22,7 +22,6 @@
   }
   .mobile__menu__logo {
     width: 60px;
-    position: absolute;
   }
   .mobile__nav__icon {
     width: 20px;
@@ -41,6 +40,9 @@
   .product {
     flex-basis: 80%;
   }
+  .animation__images__title {
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 565px) {
   .opener__title {
@@ -55,5 +57,17 @@
   }
   .product {
     flex-basis: 100%;
+  }
+  .info__card {
+    font-size: 15px;
+  }
+  .animation__images__title {
+    font-size: 25px;
+  }
+
+  .info__card {
+    max-width: 250px;
+    height: 180px;
+    padding: 10px 10px;
   }
 }
