@@ -520,6 +520,8 @@
   width: 100px;
 }
 
+/* slidshow section start */
+
 .slideshow {
   display: inline-block;
   width: 100vw;
@@ -539,6 +541,9 @@
   width: 100%;
   height: 100%;
   z-index: -2;
+  animation: slideshow;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 .animation__image__ovarlay {
   position: absolute;
@@ -586,4 +591,166 @@
 .info__card_btn__text {
   color: var(--secondary-color);
   cursor: pointer;
+}
+
+/* slider */
+
+.slider {
+  margin: 80px 100px;
+  text-align: center;
+  font-family: "Merriweather sans-serif";
+}
+.slider__title {
+  font-size: 50px;
+}
+
+.slider__container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.slider__item {
+  width: 200px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+}
+.slider__item__img {
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/Slider/accesories/hand-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  margin: 0 auto;
+}
+
+.slider__item__img__sec {
+  background-image: url("../img/Slider/accesories/bracelet-1.PNG");
+  background-size: 110px;
+}
+.slider__item__img__third {
+  background-image: url("../img/Slider/accesories/mom-1.PNG");
+}
+.slider__item__btn {
+  width: 100px;
+  height: 30px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.slider__item__btn__text {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.slider__icon {
+  width: 40px;
+  cursor: pointer;
+}
+/* slider End */
+
+/* subscribe and Footer Section */
+.last__section {
+  margin-top: 100px;
+}
+.form__container {
+  width: 100vw;
+  height: 60vh;
+  padding: 100px 50px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+.form__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/subscribe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.form__ovarlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  z-index: -1;
+  opacity: 0.6;
+}
+.form__title {
+  color: var(--light-color);
+  margin-bottom: 50px;
+}
+.form__title h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.form__title h2 {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.subscribe__form {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+  margin: auto;
+}
+.subscribe__form__input {
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--light-color);
+  padding: 10px;
+  max-width: 400px;
+  flex-basis: 60%;
+  color: var(--light-color);
+}
+.subscribe__form__input::placeholder {
+  color: var(--light-color);
+}
+.subscribe__form--subscribe {
+  flex-basis: 30%;
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+/* subscribe and Footer Section END */
+
+/* footer */
+
+.footer {
+  height: 60vh;
+  background-color: var(--main-color);
+}
+
+/* footer End */
+@keyframes slideshow {
+  0% {
+  }
+  25% {
+    background-image: url("../img/Slider/slider-2.jpg");
+  }
+  50% {
+  }
+  75% {
+    background-image: url("../img/Slider/slider-3.jpg");
+  }
+  100% {
+  }
 }

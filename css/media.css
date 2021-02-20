@@ -43,6 +43,12 @@
   .animation__images__title {
     font-size: 35px;
   }
+  .product__section__title {
+    font-size: 35px;
+  }
+  .product__container {
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 565px) {
   .opener__title {
@@ -69,5 +75,14 @@
     max-width: 250px;
     height: 180px;
     padding: 10px 10px;
+  }
+  .product__section__title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .product__section__title {
+    font-size: 23px;
   }
 }
