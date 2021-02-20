@@ -49,6 +49,15 @@
   .product__container {
     justify-content: center;
   }
+  .footer {
+    justify-content: space-between;
+  }
+  .contact {
+    display: none;
+  }
+  .mobile_show_social {
+    visibility: visible;
+  }
 }
 @media only screen and (max-width: 565px) {
   .opener__title {
@@ -78,6 +87,14 @@
   }
   .product__section__title {
     font-size: 25px;
+  }
+  .footer {
+    padding: 50px;
+    font-size: 12px;
+  }
+  .contact__icons svg {
+    width: 15px;
+    height: 15px;
   }
 }
 

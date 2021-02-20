@@ -66,13 +66,15 @@
 }
 
 .nav__icons {
-  width: 50px;
+  width: 70px;
+
   display: flex;
   justify-content: space-between;
 }
 
 .nav__icons .icon {
   width: 20px;
+  height: 20px;
 }
 .nav__icons .icon:hover {
   color: var(--secondary-color);
@@ -80,6 +82,7 @@
 .nav__icons__cart--link {
   display: flex;
   position: relative;
+  z-index: -1;
 }
 .nav__icons__cart__items {
   position: relative;
@@ -217,6 +220,21 @@
   text-align: center;
   justify-content: space-between;
 }
+.mob__nav__overlay {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: var(--main-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+.show {
+  visibility: visible;
+  opacity: 0.9;
+}
 
 .mobile__nav__search {
   position: relative;
@@ -275,13 +293,13 @@
   color: white;
   transition: color 0.5s ease-in-out;
 }
-.mobile__nav__icon--fb:hover {
+.nav__icon--fb:hover {
   color: var(--fb-color);
 }
-.mobile__nav__icon--in:hover {
+.nav__icon--in:hover {
   color: var(--in-color);
 }
-.mobile__nav__icon--tw:hover {
+.nav__icon--tw:hover {
   color: var(--tw-color);
 }
 
@@ -637,13 +655,12 @@
   background-image: url("../img/Slider/accesories/mom-1.PNG");
 }
 .slider__item__btn {
-  width: 100px;
+  width: 100%;
   height: 30px;
   background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 
 .slider__item__btn__text {
@@ -735,9 +752,80 @@
 /* footer */
 
 .footer {
+  display: flex;
+  justify-content: space-around;
   height: 60vh;
   background-color: var(--main-color);
+  padding: 50px 100px;
+  font-family: "Brygada 1018";
+  color: var(--light-color);
 }
+.schedule {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.schedule__days {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.schedule__days li {
+  margin-bottom: 20px;
+}
+.copyright {
+  margin-top: 20px;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.help__assistance a li {
+  color: var(--light-color);
+  margin-bottom: 20px;
+}
+.help a li:hover {
+  color: var(--secondary-color);
+}
+
+.help__assistance {
+  margin-top: 40px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  justify-content: space-between;
+}
+.contact__icons a {
+  color: var(--light-color);
+}
+.contact__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* footer mob */
+.mobile_show_social {
+  visibility: hidden;
+}
+
+.mobile_show_social img {
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* footer mob  End*/
 
 /* footer End */
 @keyframes slideshow {
