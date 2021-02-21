@@ -30,7 +30,7 @@
 
 .header__logo {
   width: 60px;
-  height: 60px;
+  height: 50px;
 }
 .nav__list {
   display: flex;
@@ -329,6 +329,9 @@
   height: 100%;
   background-color: var(--main-color);
   opacity: 0.45;
+}
+.opener--overlay {
+  opacity: 0.7;
 }
 .opener__title {
   position: relative;
@@ -842,3 +845,257 @@
   100% {
   }
 }
+
+/* Accessories Start */
+.opener__second {
+  background-image: url("../img/main-2.jpg");
+  background-position: center/center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.operner__title__underlay {
+  display: flex;
+  width: 400px;
+  height: 200px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light-color);
+}
+.operner__title__underlay h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.operner__title__underlay h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* acc product */
+.acc_1 {
+  background-image: url("../img/accessories/acc-1/hat.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .acc_1 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-1/hat-2.PNG");
+}
+.acc_2 {
+  background-image: url("../img/accessories/acc-2/glasses-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .acc_2 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-2/glasses-2.PNG");
+}
+.acc_3 {
+  background-image: url("../img/accessories/acc-3/glasses-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .acc_3 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-3/glasses-2.PNG");
+}
+.acc_4 {
+  background-image: url("../img/accessories/acc-4/bag-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .acc_4 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-4/bag-2.PNG");
+}
+.acc_5 {
+  background-image: url("../img/accessories/acc-5/bag-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .acc_5 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-5/bag-2.PNG");
+}
+.acc_6 {
+  background-image: url("../img/accessories/acc-7/poter-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .acc_6 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-7/poter-2.PNG");
+}
+
+.main__product {
+  display: inline-block;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  font-family: "brygada 1918 sans-serif";
+}
+.main__product .acc__main {
+  flex: 1;
+}
+
+.acc__product__img {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/accessories/acc-big-slide-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-image 0.4s ease-in-out;
+  background-position: top;
+  margin: 100px auto;
+  z-index: -2;
+}
+
+.acc__product__view {
+  height: 100%;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.acc__product__below__desc {
+  padding: 0 10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 300px;
+}
+.acc__stars {
+  margin-bottom: 30px;
+}
+.acc__product__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.7;
+  z-index: -1;
+}
+.acc__product__description {
+  background-color: var(--main-color);
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.acc__main__title {
+  font-size: 40px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+.mob__acc__main__title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  z-index: 1;
+  visibility: hidden;
+}
+.acc__price__background {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  width: 200px;
+  margin: auto;
+}
+
+.acc__product__price {
+  color: var(--light-color);
+  font-size: 18px;
+}
+.acc__btn {
+  display: flex;
+  color: var(--light-color);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: var(--main-color);
+  padding: 20px;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.acc__btn:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.acc__desc {
+  color: var(--light-color);
+}
+.acc__desc .acc__desc__li {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.slider__item__img {
+  transition: background-image 0.3s ease-in-out;
+}
+
+.slider__acc__img__1 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-8/hat-1.PNG");
+}
+.acc__item__1:hover .slider__acc__img__1 {
+  background-image: url("../img/accessories/acc-8/hat-2.PNG");
+}
+.slider__acc__img__2 {
+  background-image: url("../img/accessories/acc-9/glasses-1.PNG");
+}
+.acc__item__2:hover .slider__acc__img__2 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-9/glasses-2.PNG");
+}
+.slider__acc__img__3 {
+  background-image: url("../img/accessories/acc-12/hat-1.PNG");
+}
+.acc__item__3:hover .slider__acc__img__3 {
+  cursor: pointer;
+  background-image: url("../img/accessories/acc-12/hat-2.PNG");
+}
+
+.acc__main__product__img--1 {
+  background-image: url("../img/accessories/main/watch-1.PNG");
+  background-size: 180px;
+}
+.acc__container {
+  flex-wrap: wrap;
+}
+.acc__item {
+  margin: 10px auto;
+}
+/* acc product End */
+
+/* Accessories END */
