@@ -495,9 +495,12 @@
   text-align: center;
   margin-top: 10px;
   width: 100%;
+  color: var(--light-color);
+}
+.product__view__background:hover {
+  color: var(--secondary-color);
 }
 .product__view {
-  color: var(--secondary-color);
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 2px;
@@ -667,11 +670,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--light-color);
+  padding: 20px;
+}
+.slider__item__btn:hover {
+  color: var(--secondary-color);
 }
 
 .slider__item__btn__text {
-  color: var(--secondary-color);
   cursor: pointer;
+}
+.slider__item__btn__text:hover {
 }
 .slider__icon {
   width: 40px;
@@ -1099,6 +1108,43 @@
 .acc__item {
   margin: 10px auto;
 }
+
+.acc__slider--1 {
+  background-image: url("../img/accessories/mask-1/mask-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.acc__item__second__slider--1:hover .acc__slider--1 {
+  cursor: pointer;
+  background-image: url("../img/accessories/mask-1/mask-2.PNG");
+}
+.acc__slider--2 {
+  background-image: url("../img/accessories/mask-2/mask-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.acc__item__second__slider--2:hover .acc__slider--2 {
+  cursor: pointer;
+  background-image: url("../img/accessories/mask-2/mask-2.PNG");
+}
+.acc__slider--3 {
+  background-image: url("../img/accessories/mask-3/mask-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.acc__item__second__slider--3:hover .acc__slider--3 {
+  cursor: pointer;
+  background-image: url("../img/accessories/mask-3/mask-2.PNG");
+}
+.slider__item__masks {
+  height: 200px;
+}
 /* acc product End */
 
 /* Accessories END */
@@ -1162,7 +1208,7 @@
   font-size: 20px;
   color: var(--light-color);
   background-color: var(--secondary-color);
-  z-index: 100;
+  z-index: 2;
 }
 
 .sale_1 {
@@ -1207,7 +1253,8 @@
 }
 .product:hover .sale_4 {
   cursor: pointer;
-  background-image: url("../img/sale/sale-4/shoes-1.PNG");
+  background-image: url("../img/sale/sale-4/shoes-2.PNG");
+  background-size: 100px;
 }
 .sale_5 {
   background-image: url("../img/sale/sale-5/shoes-1.PNG");
@@ -1225,10 +1272,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150px;
+
   transition: background-image 0.4s ease-in-out;
 }
 .product:hover .sale_6 {
   cursor: pointer;
   background-image: url("../img/sale/sale-6/shoes-2.PNG");
+  background-size: 100px;
+}
+.sale__main__product__img--1 {
+  background-image: url("../img/sale/sale_slider-1/img-1.PNG");
 }
 /* SALE END*/
