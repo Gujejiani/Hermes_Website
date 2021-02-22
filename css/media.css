@@ -2,6 +2,9 @@
   .nav {
     display: none;
   }
+  .nav__icons__search {
+    display: none;
+  }
   .header__hamburger--show {
     display: inline-block;
   }
@@ -24,6 +27,9 @@
 }
 
 @media only screen and (max-width: 769px) {
+  .sale__opener__title {
+    font-size: 20px;
+  }
   .acc__product__description {
     display: none;
   }

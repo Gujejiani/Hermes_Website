@@ -25,12 +25,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 100px;
+  padding: 15px 100px;
 }
 
 .header__logo {
-  width: 60px;
-  height: 50px;
+  width: 40px;
 }
 .nav__list {
   display: flex;
@@ -66,10 +65,7 @@
 }
 
 .nav__icons {
-  width: 70px;
-
   display: flex;
-  justify-content: space-between;
 }
 
 .nav__icons .icon {
@@ -79,19 +75,26 @@
 .nav__icons .icon:hover {
   color: var(--secondary-color);
 }
-.nav__icons__cart--link {
+.nav__icons__cart__items {
   display: flex;
   position: relative;
   z-index: -1;
 }
 .nav__icons__cart__items {
   position: relative;
-  top: 5px;
   color: var(--gray-color);
   opacity: 0.7;
 }
 .nav__list .nav__list__li {
   position: relative;
+}
+.nav__icons__search {
+  position: relative;
+  right: 10px;
+}
+.nav__icons__cart__items--counter {
+  position: relative;
+  top: 4px;
 }
 .nav__list .nav__list__li__shop__dropdown__parrent {
   position: absolute;
@@ -311,9 +314,9 @@
   position: relative;
   left: 0;
   top: 0;
-  width: 100vw;
+
   height: 100vh;
-  z-index: -10;
+
   background-image: url("../img/main-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -545,7 +548,7 @@
 
 .slideshow {
   display: inline-block;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   position: relative;
   text-align: center;
@@ -681,7 +684,6 @@
   margin-top: 100px;
 }
 .form__container {
-  width: 100vw;
   height: 60vh;
   padding: 100px 50px;
   text-align: center;
@@ -947,7 +949,7 @@
 
 .main__product {
   display: inline-block;
-  width: 100vw;
+
   height: 90vh;
   display: flex;
   font-family: "brygada 1918 sans-serif";
@@ -982,7 +984,6 @@
   align-items: center;
 }
 .acc__product__below__desc {
-  padding: 0 10px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -1005,6 +1006,7 @@
   background-color: var(--main-color);
   height: 100%;
   padding: 50px;
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1025,8 +1027,9 @@
 }
 .acc__price__background {
   background-color: var(--secondary-color);
-  padding: 15px;
-  width: 200px;
+  padding: 15px 0;
+  width: 100%;
+  max-width: 200px;
   margin: auto;
 }
 
@@ -1056,8 +1059,8 @@
   color: var(--light-color);
 }
 .acc__desc .acc__desc__li {
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .slider__item__img {
@@ -1099,3 +1102,133 @@
 /* acc product End */
 
 /* Accessories END */
+
+/* SALE START */
+.opener__sale {
+  background-image: url("../img/sale/janfillem-iwpbZ_173WM-unsplash.jpg");
+  background-position: center/center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sale__opener__title {
+  margin-top: 150px;
+}
+.sale__opener__btn {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  z-index: 1;
+  padding: 10px;
+  margin: 10px auto;
+  color: var(--light-color);
+  top: 30px;
+}
+.sale__opener__btn:hover {
+  cursor: pointer;
+}
+.sale__opener__title {
+  position: relative;
+  font-size: 25px;
+  z-index: 2;
+  font-weight: bold;
+  color: var(--light-color);
+}
+.sale__opener____btn {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: var(--secondary-color);
+
+  z-index: 10;
+  margin: auto;
+  margin-top: 50px;
+}
+.opener__sale__discount {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  z-index: 100;
+}
+
+.sale_1 {
+  background-image: url("../img/sale/sale-1/glasses-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .sale_1 {
+  cursor: pointer;
+  background-image: url("../img/sale/sale-1/glasses-2.PNG");
+}
+.sale_2 {
+  background-image: url("../img/sale/sale-2/glasses-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .sale_2 {
+  cursor: pointer;
+  background-image: url("../img/sale/sale-2/glasses-2.PNG");
+}
+.sale_3 {
+  background-image: url("../img/sale/sale-3/poter-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .sale_3 {
+  cursor: pointer;
+  background-image: url("../img/sale/sale-3/poter-2.PNG");
+}
+.sale_4 {
+  background-image: url("../img/sale/sale-4/shoes-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .sale_4 {
+  cursor: pointer;
+  background-image: url("../img/sale/sale-4/shoes-1.PNG");
+}
+.sale_5 {
+  background-image: url("../img/sale/sale-5/shoes-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .sale_5 {
+  cursor: pointer;
+  background-image: url("../img/sale/sale-5/shoes-2.PNG");
+}
+.sale_6 {
+  background-image: url("../img/sale/sale-6/shoes-1.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  transition: background-image 0.4s ease-in-out;
+}
+.product:hover .sale_6 {
+  cursor: pointer;
+  background-image: url("../img/sale/sale-6/shoes-2.PNG");
+}
+/* SALE END*/
