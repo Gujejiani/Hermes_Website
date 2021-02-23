@@ -463,6 +463,7 @@
 }
 
 .product__price__background {
+  position: relative;
   background-color: var(--secondary-color);
   padding: 15px;
   text-align: center;
@@ -1283,4 +1284,34 @@
 .sale__main__product__img--1 {
   background-image: url("../img/sale/sale_slider-1/img-1.PNG");
 }
+.product__old__price {
+  position: relative;
+  top: -10px;
+  color: var(--gray-color);
+}
+.product__old__price__overlay {
+  position: absolute;
+  top: 0px;
+  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+}
+.product__main__old__price {
+  position: absolute;
+  font-size: 30px;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product__main__old__price__overlay {
+  position: absolute;
+
+  width: 100px;
+  height: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+}
+
 /* SALE END*/
