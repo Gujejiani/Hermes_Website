@@ -42,7 +42,9 @@
   color: var(--gray-color);
   position: relative;
 }
-
+.mob__list__link--active {
+  color: var(--secondary-color) !important;
+}
 .nav__list .nav__list__link--active {
   color: var(--secondary-color);
 }
@@ -624,7 +626,7 @@
 /* slider */
 
 .slider {
-  margin: 80px 100px;
+  margin: 80px 0;
   text-align: center;
   font-family: "Merriweather sans-serif";
 }
@@ -637,7 +639,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
+  flex-wrap: wrap;
 }
 .slider__item {
   width: 200px;
@@ -646,6 +648,7 @@
   flex-direction: column;
   text-align: left;
   justify-content: space-between;
+  margin: auto;
 }
 .slider__item__img {
   width: 150px;
@@ -692,6 +695,7 @@
 /* subscribe and Footer Section */
 .last__section {
   margin-top: 100px;
+  position: relative;
 }
 .form__container {
   height: 60vh;
@@ -699,6 +703,9 @@
   text-align: center;
   position: relative;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form__img {
   position: absolute;
@@ -738,9 +745,9 @@
 
 .subscribe__form {
   display: flex;
+  width: 100%;
   max-width: 500px;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: center;
 }
 .subscribe__form__input {
   background: transparent;
@@ -760,6 +767,7 @@
   border: none;
   color: var(--light-color);
   cursor: pointer;
+  margin-left: 10px;
 }
 
 /* subscribe and Footer Section END */
@@ -1050,7 +1058,7 @@
 .acc__btn {
   display: flex;
   color: var(--light-color);
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   margin: auto;
   background-color: var(--main-color);
@@ -1074,6 +1082,7 @@
 }
 
 .slider__item__img {
+  margin-top: 10px;
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -1315,3 +1324,42 @@
 }
 
 /* SALE END*/
+
+/* About Page */
+.about__img {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 140vh;
+  background-image: url("../img/About.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+
+  background-position: 0 30px;
+}
+.about__container {
+  position: absolute;
+  z-index: 30;
+  top: -500px;
+  left: -100px;
+  color: #fff;
+  background-color: var(--darker-color);
+
+  max-width: 500px;
+  border-radius: 10px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 20px;
+}
+.about__container p {
+  font-size: 25px;
+}
+/* End About Page */
+.last__section__about {
+  margin: 0;
+}
