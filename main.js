@@ -31,3 +31,44 @@ cartOverlay.addEventListener("click", function () {
   cart.classList.toggle("cart--show");
   cartOverlay.classList.toggle("cart-overlay--show");
 });
+
+const mainImg = document.querySelector(".product-item__images__main");
+const imagesContainer = document.querySelector(
+  ".product-item__images__examples"
+);
+const imagesExamples = document.querySelectorAll(".product-item__img");
+const quantity = document.querySelector(".quantity");
+const quantityContainer = document.querySelector(".product-info__quantity");
+
+let quantityNum = 1;
+quantityContainer.addEventListener("click", function (e) {
+  const accType = e.target.dataset?.id;
+  if (!accType) return;
+
+  if (accType === "plus") {
+    quantityNum++;
+    quantity.innerHTML = quantityNum;
+  }
+  if (accType === "minus" && quantityNum > 1) {
+    quantityNum--;
+    quantity.innerHTML = quantityNum;
+  }
+});
+
+const removeImageBorder = () => {
+  imagesExamples.forEach((img) => {
+    if (img.classList.contains("current__image")) {
+      img.classList.remove("current__image");
+    }
+  });
+};
+
+imagesContainer.addEventListener("click", function (e) {
+  const img = e.target;
+  if (img.nodeName === "IMG") {
+    const imgSrc = img.src;
+    mainImg.src = imgSrc;
+    removeImageBorder();
+    img.classList.add("current__image");
+  }
+});
