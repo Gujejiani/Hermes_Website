@@ -1506,6 +1506,16 @@
   background-color: var(--light-color);
   color: var(--main-color);
   margin: 15px 0;
+  outline: none;
+
+  width: 100%;
+}
+/* .product-info__size__parent {
+  height: 100px;
+  overflow: scroll;
+} */
+.quantity__title {
+  margin-bottom: 15px;
 }
 .product-info__price {
   color: var(--light-color);

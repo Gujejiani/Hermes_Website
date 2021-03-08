@@ -213,6 +213,9 @@
     width: 15px;
     left: 2px;
   }
+  .product__item__description {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
