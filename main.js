@@ -75,3 +75,16 @@ if (imagesContainer) {
     }
   });
 }
+
+const view = document.querySelector(".product-view");
+
+mainImg.addEventListener("mousemove", function (e) {
+  let x = e.offsetX;
+  let y = e.offsetY;
+  // view.style.left = `${x}px`;
+  // view.style.top = `${y + 100}px`;
+  view.style.marginLeft = x + "px";
+  view.style.marginTop = y + "px";
+  console.log(x);
+  console.log(view);
+});
