@@ -19,6 +19,7 @@
   width: 100%;
   background-color: var(--main-color);
   z-index: 50;
+  top: 0;
 }
 
 .header__container {
@@ -1399,46 +1400,39 @@
 /* SALE END*/
 
 /* About Page */
-.about__img {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 140vh;
-  background-image: url("../img/About.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.about__title {
+  color: var(--main-color);
+  margin-top: 150px;
   text-align: center;
-
-  background-position: 0 30px;
+  font-size: 35px;
 }
 .about__container {
-  position: absolute;
-  z-index: 30;
-  top: -500px;
-  left: -100px;
-  color: #fff;
-  background-color: var(--darker-color);
+  margin: 50px 0;
 
-  max-width: 500px;
-  border-radius: 10px;
-  border-radius: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  padding: 20px;
+  padding: 0 100px;
 }
-.about__container p {
-  font-size: 25px;
+.about__info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+}
+.about__info__img {
+  display: flex;
+  max-width: 350px;
+  max-height: 350px;
+  margin-bottom: 20px;
+}
+.about__info__text {
+  text-align: justify;
+  line-height: 20px;
+  max-width: 350px;
 }
 /* End About Page */
-.last__section__about {
-  margin: 0;
-}
 
-/* product section Start */
-/* product section End */
+/* product.html section Start */
 
 .wrapper {
   height: 100vh;
@@ -1510,10 +1504,7 @@
 
   width: 100%;
 }
-/* .product-info__size__parent {
-  height: 100px;
-  overflow: scroll;
-} */
+
 .quantity__title {
   margin-bottom: 15px;
 }
@@ -1592,14 +1583,10 @@
   left: 60%;
   top: 50%;
   transform: translateY(-50%);
-  /* background-image: url("../img/shoes_model-1/img-1.PNG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center; */
 }
 
 .product-item__preview__img {
   width: 100%;
   height: 100%;
 }
+/* product section End */
