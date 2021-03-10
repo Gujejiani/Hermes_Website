@@ -50,6 +50,9 @@
   .about__info__text__2 {
     order: 2;
   }
+  .nav__icons__search__inputP {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 769px) {
@@ -292,7 +295,7 @@
   .mobile_show_social img {
     margin: 0;
   }
-  .operner__title__underlay h2 {
+  .opener__title__underlay h2 {
     font-size: 15px;
     margin-bottom: 10px;
   }
@@ -319,5 +322,8 @@
   .product__item__description li {
     margin-top: 5px;
     font-size: 13px;
+  }
+  .mobile__nav__icons__list {
+    padding-top: 10px;
   }
 }

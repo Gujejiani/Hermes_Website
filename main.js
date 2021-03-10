@@ -88,14 +88,13 @@ if (view) {
 
     view.style.marginLeft = x - 50 + "px";
     view.style.marginTop = y - 50 + "px";
-    console.log(x);
-    console.log(view);
   });
 }
 imageZoom("main-Img", "preview");
 function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy;
   img = document.getElementById(imgID);
+  if (!img) return;
   result = document.getElementById(resultID);
   /* Create lens: */
   lens = document.createElement("DIV");
@@ -177,3 +176,9 @@ function imageZoom(imgID, resultID) {
     return { x: x, y: y };
   }
 }
+
+const search = document.querySelector(".nav__icons__search ");
+const searchInput = document.querySelector(".nav__icons__search__input");
+search.addEventListener("click", function (e) {
+  searchInput.classList.toggle("nav__icons__search__input--show");
+});
